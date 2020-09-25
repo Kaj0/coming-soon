@@ -190,6 +190,8 @@ input::placeholder{
         height:450px;
         transform: translateY(-600px);
     }
+    .attribution { width: 0; opacity: 0; }
+    .attribution a { width: 0; } 
 }
 @media screen and (max-width:414px){
     .content{
