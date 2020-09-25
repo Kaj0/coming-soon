@@ -1,0 +1,249 @@
+*{
+    font-size: 16px;
+    font-family: 'Josefin Sans' , sans-serif;
+    margin: 0;
+    padding: 0;
+    color: hsl(0, 36%, 70%);
+    border: none;
+
+}
+.container{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.box1{
+    width: 60%;
+    padding: 50px 0 100px;
+    background-image: url(images/bg-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto;
+    
+}
+.content{
+    width: 54%;
+    margin: auto;
+}
+.logo{
+    width: 54%;
+    padding: 10px 0;
+    margin: auto;
+}
+h1.one{
+    padding-top: 100px;
+    font-size: 60px;
+    font-weight: 300;
+    letter-spacing: 15px;
+}
+h1.two{
+    font-weight: 600;
+    font-size: 60px;
+    letter-spacing: 15px;
+    color: hsl(0, 6%, 24%);
+}
+p.text{
+    padding: 35px 0;
+    width: 100%;
+}
+input{
+    height: 50px;
+    width: 100%;
+    border: 1px solid hsl(0, 36%, 70%);
+    border-radius: 200px;
+    padding-left: 30px;
+    opacity: 0.6;
+}
+input:focus{
+    outline: none;
+    color: hsl(0, 6%, 24%);
+    border: 1px solid hsl(0, 93%, 68%);
+    opacity: 1;
+    box-shadow:0 0 2px hsl(0, 93%, 68%);
+}
+input::placeholder{
+    color: hsl(0, 36%, 70%);
+}
+.submit{
+    width: fit-content;
+    padding: 14px 40px;
+    border-radius: 200px;
+    transform: translate(380px,-52px);
+    background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    box-shadow: -10px 15px 40px hsl(0, 36%, 70%);
+}
+.submit:hover{
+    cursor: pointer;   
+    background-color: hsl(0,36%,70%);
+}
+.submit:focus{
+    outline: none;
+    background-color: hsl(0,36%,70%);
+}
+.box2{
+    background-image: url(images/hero-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 40%;
+    height: auto;
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); } 
+@media screen and (max-width:1024px){
+    .submit{
+        transform: translate(275px,-52px);
+    }
+}
+@media screen and (max-width: 768px){
+    .container{
+        display: block;
+    }
+    .box1{
+        width: 100%;
+       
+    }
+    .logo{
+        width: 70%;
+        margin: auto;
+    }
+    .submit{
+        transform: translate(180px,-52px);
+    }
+    .content{
+        width: 50%;
+        text-align: center;
+        padding-bottom: 100px;
+        transform: translateY(600px);
+    }
+    h1.one{
+        padding-top: 70px;
+        font-size: 60px;
+        font-weight: 300;
+        letter-spacing: 15px;
+    }
+    h1.two{
+        font-weight: 600;
+        font-size: 60px;
+        letter-spacing: 15px;
+        color: hsl(0, 6%, 24%);
+    }
+    p.text{
+        font-size: 18px;
+    }
+    .box2{
+        background-image: url(images/hero-mobile.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 500px;
+        transform: translateY(-690px);
+    }
+}
+@media screen and (max-width:700px){
+    .submit{
+        transform: translate(176px,-52px);
+    }
+    .content{
+        width: 54%;
+    }
+}
+@media screen and (max-width: 680px){
+    p.text{
+        font-size: 17px;
+    }
+}
+@media screen and (max-width:600px){
+    .submit{
+        transform: translate(160px,-52px);
+    }
+    .content{
+        width:58%;
+    }
+    p.text{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width:560px){
+    .submit{
+        transform: translate(155px,-52px);
+    }
+    .content{
+        width: 60%;
+    }
+}
+@media screen and (max-width:500px){
+    .submit{
+        transform: translate(165px,-52px);
+    }
+    .content{
+        width:75%;
+    }
+    form{
+        width: 90%;
+    }
+    h1.one{
+        padding-top: 0;
+    }
+    .box2{
+        height:450px;
+        transform: translateY(-600px);
+    }
+}
+@media screen and (max-width:414px){
+    .content{
+        width:80%;
+    }
+    .submit{
+        transform: translate(135px,-52px);
+    }
+    form{
+        width:85%;
+    }
+    .logo{
+        padding-bottom: 0;
+    }
+    .box2{
+        height:400px;
+        
+    }
+}
+@media screen and (max-width:375px){
+    .content{
+        width: 90%;
+    }
+    .submit{
+        transform: translate(145px,-52px);
+    }
+}
+@media screen and (max-width:350px){
+    h1.one,h1.two{
+        letter-spacing: 10px;
+    }
+    .content{
+        width:95%;
+    }
+    .submit{
+        transform: translate(128px,-52px);
+    }
+}
+@media screen and (max-width:320px){
+    h1.one,h1.two{
+        letter-spacing: 8px;
+    } 
+    form{
+        width:75%;
+    } 
+    .submit{
+        transform: translate(120px,-52px);
+    }
+
+}
+@media screen and (max-width:305px){
+    .container{
+        width:0;
+        height:0;
+        opacity:0;
+    }
+}
